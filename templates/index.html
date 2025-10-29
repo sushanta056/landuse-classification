@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landuse Classification Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <main class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>Landuse Classification Predictor</h1>
+      <p class="subtitle">Upload a Sentinel-2 GeoTIFF with <strong>10 bands</strong> in order: B2, B3, B4, B5, B6, B7, B8, B8A, B11, B12.</p>
+      <p class="subtitle">“This model is trained using Sentinel-2 data from Kaski and nearby hilly districts. 
+        It is best suited for generating land use maps of these regions. 
+        Please use raster images smaller than <strong>100 MB</strong>, as larger files may take too long to process 
+        due to limitations of the free Render.com hosting platform.”</p>
+
+    </header>
+
+    <!-- Instructions -->
+    <section class="card info-card">
+      <h2>Instructions</h2>
+      <ul>
+        <li>Your GeoTIFF must contain <strong>10 bands</strong> in order: B2, B3, B4, B5, B6, B7, B8, B8A, B11, B12.</li>
+        <li>You can download a <strong>sample raster image</strong> to try this model:</li>
+        <a href="{{ url_for('static', filename='sample/input_image.tif') }}" download class="btn">Download Sample GeoTIFF</a>
+        <li>After uploading, click <strong>Predict</strong> to get the classified map.</li>
+        <li>The predicted file will automatically download once ready.</li>
+      </ul>
+    </section>
+
+    <!-- Prepare Raster Section -->
+    <section class="card gee-card">
+      <h2>Prepare Your Raster in Google Earth Engine</h2>
+      <p>You can use our ready-made GEE script to create and download your raster data for prediction.</p>
+      <p>Simply draw a polygon over your area of interest in GEE to define the region for your raster data.</p>
+      <a href="https://code.earthengine.google.com/63443079b85fc1d916c867285db5616f" target="_blank">Open GEE Script</a>
+    </section>
+
+    <!-- Upload & Predict Section -->
+    <section class="card upload-card big-card">
+      <h2>Upload & Predict</h2>
+      <input type="file" id="tifInput" accept=".tif">
+      <div id="fileName" class="file-name">No file selected</div>
+      <button id="predictBtn" class="btn primary" disabled>Predict</button>
+      <div id="status" class="muted small"></div>
+    </section>
+
+    <!-- Legend -->
+    <section class="card legend-card">
+      <h2>Class Legend</h2>
+      <ul>
+        <li>0: Water (river, lake, pond)</li>
+        <li>1: Forest</li>
+        <li>2: Agriculture</li>
+        <li>3: Urban(house/ constructed area) and rocky surface(river banks/beds)</li>
+      </ul>
+    </section>
+
+    <footer class="foot muted">
+      Developed by Sushanta Adhikari
+    </footer>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

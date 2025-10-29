@@ -1,0 +1,192 @@
+/* General body and container */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f2f5;
+  color: #0b1220;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Header */
+header h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 14px;
+}
+
+/* General card styling */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 2px 14px 24px 2px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 6px;
+}
+
+.btn.primary {
+  background: #0ea5a4;
+  color: white;
+}
+
+/* Small muted text */
+.muted {
+  color: #555;
+}
+
+.small {
+  font-size: 13px;
+}
+
+/* Footer */
+.foot {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* File input and Upload & Predict section */
+.big-card input[type="file"] {
+  display: block;
+  margin: 20px 0;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 95%;
+}
+
+.big-card .btn {
+  font-size: 18px;
+  padding: 14px 24px;
+  margin-top: 10px;
+}
+
+#fileName {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #0ea5a4;
+}
+
+/* GEE card - unified style with other cards */
+.gee-card {
+  background: #fff;
+  border-left: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+/* Simple link style (Download + GEE Script) */
+.gee-card a,
+.info-card a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #0ea5a4;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.gee-card a:hover,
+.info-card a:hover {
+  color: #0b807e;
+  text-decoration: underline;
+}
+
+/* Highlight Upload & Predict section */
+.upload-card.big-card {
+  border: 4px solid #0ea5a4;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.upload-card.big-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Legend card */
+.legend-card ul {
+  padding-left: 20px;
+}
+
+.legend-card li {
+  margin-bottom: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  .card {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .big-card input[type="file"] {
+    font-size: 16px;
+  }
+
+  .big-card .btn {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+  .gee-card a,
+  .info-card a {
+    font-size: 15px;
+  }
+
+  .foot {
+    font-size: 13px;
+  }
+}

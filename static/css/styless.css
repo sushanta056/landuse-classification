@@ -1,0 +1,150 @@
+/* General body and container */
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f0f2f5;
+  color:#0b1220;
+}
+.container {
+  max-width:1000px;
+  margin:30px auto;
+  padding:20px;
+}
+
+/* Header */
+header h1 {
+  font-size:32px;
+  margin-bottom:6px;
+}
+.subtitle {
+  color:#555;
+  font-size:14px;
+}
+
+/* General card styling */
+.card {
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.06);
+  padding:20px;
+  margin-bottom:30px;
+  margin-top:30px;
+}
+.card h2 {
+  margin-top:0;
+  font-size:20px;
+  margin-bottom:10px;
+}
+ul {
+  padding-left:20px;
+}
+
+/* Buttons */
+.btn {
+  display:inline-block;
+  padding:2px 14px 24px 2px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+  text-decoration:none;
+  margin-top:6px;
+}
+.btn.primary {
+  background:#0ea5a4;
+  color:white;
+}
+
+/* Small muted text */
+.muted {
+  color:#555;
+}
+.small {
+  font-size:13px;
+}
+
+/* Footer */
+.foot {
+  font-size:12px;
+  text-align:center;
+  margin-top:20px;
+  color:#666;
+}
+
+/* File input and Upload & Predict section */
+.big-card input[type="file"] {
+  display:block;
+  margin:20px 0;
+  padding:12px;
+  font-size:18px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  width:95%;
+}
+.big-card .btn {
+  font-size:18px;
+  padding:14px 24px;
+  margin-top:10px;
+}
+#fileName {
+  margin-top:10px;
+  font-weight:600;
+  color:#333;
+}
+#status {
+  margin-top:10px;
+  font-size:16px;
+  color:#0ea5a4;
+}
+
+/* GEE card - unified style with other cards */
+.gee-card {
+  background:#fff;
+  border-left:none;
+  padding:20px;
+  margin-bottom:20px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+.gee-card a.btn {
+  display:inline-block;
+  margin-top:10px;
+  background:#0ea5a4;       /* subtle highlight */
+  color:#fff;
+  padding:10px 16px;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:16px;
+}
+.gee-card a.btn:hover {
+  opacity:0.9;              /* subtle hover effect */
+}
+
+/* Legend card */
+.legend-card ul {
+  padding-left:20px;
+}
+.legend-card li {
+  margin-bottom:4px;
+}
+/* Footer */
+.foot {
+  font-size:14px;           /* slightly larger */
+  text-align:center;
+  margin-top:20px;           /* highlight color */
+  font-weight:600;           /* make it bold */
+}
+
+/* Highlight Upload & Predict section */
+.upload-card.big-card {  
+  border: 4px solid #0ea5a4;    /* primary color border */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1); /* subtle shadow for depth */
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect to make it interactive */
+.upload-card.big-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
