@@ -17,3 +17,10 @@ The model was trained on over 4,000 samples (approximately 1,000 per class) coll
 Although NDVI, NDWI, and NDBI indices value were downloaded from GEE, they were not used during model training because they did not improve model accuracy.
 
 This model is best suited for generating land use maps for Pokhara Valley and nearby hilly region, as it was trained on region-specific data.
+
+The web application was deployed using HTML, CSS, JavaScript, and Flask.
+
+### Development Note
+The primary focus of this project was on model development, evaluation, and deployment rather than full-scale web application design. An AI-based coding assistant was used to accelerate parts of the web deployment process.
+While I have experience with web development, using an AI assistant allowed me to focus more on the machine learning workflow and model performance, which was the core objective of this project.
+
