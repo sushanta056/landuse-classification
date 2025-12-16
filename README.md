@@ -25,8 +25,3 @@ These are the landuse map of my home city (Pokhara valley) which is generated us
 
 
 The web application was deployed using HTML, CSS, JavaScript, and Flask.
-
-### Development Note
-The primary focus of this project was on model development, evaluation, and deployment rather than full-scale web application design. An AI-based coding assistant was used to accelerate parts of the web deployment process.
-While I have experience with web development, using an AI assistant allowed me to focus more on the machine learning workflow and model performance, which was the core objective of this project.
-
